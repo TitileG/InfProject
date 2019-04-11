@@ -4,7 +4,8 @@ import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 @Component({
   selector: 'app-ask-gus',
   templateUrl: './ask-gus.component.html',
-  styleUrls: ['./ask-gus.component.scss']
+  styleUrls: ['./ask-gus.component.scss'],
+
 })
 export class AskGusComponent implements OnInit {
 
@@ -34,7 +35,9 @@ export class AskGusComponent implements OnInit {
   }
 
 
- 
+  onSubmit() {
+    alert('SUCCESS!! :-)\n\n');
+  }
 
   ngOnInit() {
   }
