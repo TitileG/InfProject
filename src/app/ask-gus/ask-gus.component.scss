@@ -1,0 +1,47 @@
+.askGus-container{
+width: 100%;
+height: 100%;
+
+
+}
+.name-container
+{
+    width: 100%;
+    text-align: left;
+
+}
+.email-container{
+    width: 100%;
+    text-align: left;
+}
+.message-container{
+    width: 100%;
+    text-align: left;
+
+}
+.button{
+    background-color: pink;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer
+}
+.container{
+
+}
+.btn-primary{
+    background-color: green;
+    cursor: pointer;
+    color : black;
+    border: none;
+}
+.btn-Danger{
+    cursor: pointer;
+    background-color : red;
+    color:black;
+    border: none;
+}
+
+/* You can add global styles to this file, and also import other style files */

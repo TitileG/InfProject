@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 
 @Component({
   selector: 'app-ask-gus',
@@ -7,9 +8,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AskGusComponent implements OnInit {
 
-  constructor() { }
+  id = 'qDuKsiwS5xw';
+  playerVars = {
+    cc_lang_pref: 'en'
+  };
+  private player;
+  private ytEvent;
+
+  constructor() {
+  
+  }
+  onStateChange(event) {
+    this.ytEvent = event.data;
+  }
+  savePlayer(player) {
+    this.player = player;
+  }
+  
+  playVideo() {
+    this.player.playVideo();
+  }
+  
+  pauseVideo() {
+    this.player.pauseVideo();
+  }
+
+
+ 
 
   ngOnInit() {
   }
+  
 
 }

@@ -1,3 +1,72 @@
-<p>
-  ask-gus works!
-</p>
+<div class="container" >
+  <div class="row" >
+      <div class="col">
+      <h1 class="display-6">Ask Gus the Goose</h1>
+   
+
+
+    <section class="card card-info text-white bg-dark mb-3">
+      <div class="card-header" class="col-sm">Who is Gus?</div>
+      <section class="card-img-top">
+        <youtube-player
+          [videoId]="id"
+          (ready)="savePlayer($event)"
+          (change)="onStateChange($event)"
+          [playerVars]="playerVars">
+        </youtube-player>
+      </section>
+      <div class="card-body"></div>
+    </section>
+
+    <button
+      type="button"
+      class="btn-primary"
+      (click)="playVideo()">
+      Play
+    </button>
+
+    <button
+      type="button"
+      class="btn-Danger"
+      (click)="pauseVideo()">
+      Pause
+    </button>
+  </div>
+    <div class="col">second item </div>
+  </div>
+
+
+  
+</div>
+
+
+<hr>
+<span></span>
+<span>Got a question? I would like to hear from you.Send me a message and i will respond as soon as possible.</span>
+
+<div class="askGus-container">
+  
+<span></span>
+<div class="name-container">
+  <mat-form-field>
+    <input matInput placeholder="Name">
+  </mat-form-field>
+</div>
+  <div class="email-container">
+    <mat-form-field>
+      <input matInput placeholder="Email">
+    </mat-form-field>
+  </div>
+    <div class = "message-container">
+  <mat-form-field >
+    <textarea matInput placeholder="I would like to..."></textarea>
+  </mat-form-field>
+</div>
+
+  <div>
+    <button class="button" type ="submit">submit</button>
+  </div>
+
+
+</div>
+

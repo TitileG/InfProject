@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import { NgxYoutubePlayerModule } from 'ngx-youtube-player';
 
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule,
-MatIconModule, MatListModule } from '@angular/material';
+MatIconModule, MatListModule,MatMenuModule,MatFormFieldModule,MatInputModule} from '@angular/material';
 import { HomeComponent } from './home/home.component';
 import { UpdatesComponent } from './updates/updates.component';
 import { RemindersComponent } from './reminders/reminders.component';
@@ -45,7 +46,14 @@ import { NavComponent } from './nav/nav.component';
     MatButtonModule,
     MatIconModule,
     MatListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatMenuModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    NgxYoutubePlayerModule.forRoot()
+  
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
